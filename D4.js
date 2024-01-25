@@ -151,6 +151,18 @@ let upperFirst = function (stringa) {
 
 console.log("es.8   bella bazza javascript --> ", upperFirst("bella bazza javascript"))
 
+// non avevo letto bene
+
+const frase = "bella bazza javascript";
+const parole = frase.split(" ");
+
+for (let i = 0; i < parole.length; i++) {
+   parole[i] = parole[i][0].toUpperCase() + parole[i].substr(1);
+}
+
+console.log("es.8    bella bazza javascript --> ", parole.join(" "));
+
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
